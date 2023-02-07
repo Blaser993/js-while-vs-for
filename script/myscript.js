@@ -17,7 +17,7 @@ let numero
 
 const numeriDispari = [];
 
-const DISPARI = numero % 2 != 0
+// const DISPARI = numero % 2 != 0
 
 
 // console.log(numero, DISPARI);
@@ -35,9 +35,12 @@ const LIMITE = 10
 
 while(numeriDispari.length < LIMITE){
     console.log(numeriDispari)
-    let numero = parseInt(prompt("scrivi un numero"))
+    let numero = parseInt(prompt("Aggiungi un numero dispari"))
 
-    if (numero == DISPARI && !isNaN.numero){
+    let dispari = numero % 2
+    
+
+    if (dispari = 1 && !isNaN.numero  ){
         console.log(numero)
 
         numeriDispari.push(numero);
