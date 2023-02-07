@@ -2,49 +2,38 @@ console.log("ciao");
 
 
 
-// Descrizione:
-// Utilizziamo un ciclo per chiedere all’utente un numero tramite prompt. Se il numero è dispari, lo salviamo in una lista. Continuiamo a chiedere un numero all’utente finchè non avremo ottenuto 10 numeri dispari. Tutti gli altri valori li scartiamo (numeri pari ed eventuali NaN).
-// Una volta ottenuti tutti i 10 numeri, stampiamoli in console uno alla volta.
+
+// BONUS
+// SHUFFLE ARRAY
+// a partire da una array con dei dati creare un algoritmo che vada a mescolare gli elementi al suo interno
+// Consigli:
+// il problema non è banale e vi consiglio di analizzarlo bene prima di mettervi a scrivere codice.
+// Provate voi stessi: Mettetevi 10 matite sul tavolo e provate (seguendo gli stessi passaggi) e disporle in ordine casuale e dopo traducete quello che avete fatto in codice.
+// serve un ciclo o più di uno? Quale ciclo devo usare? non c’è una soluzione unica, dipende dall’algoritmo che state provando a realizzare
+
+const scatolaMatite = ["gialla",
+"blu",
+"celeste",
+"rossa",
+"rosa",
+"verde",
+"turchese",
+"nera",
+"grigia",
+"bianca"]
+
+// PRENDO UNA MATITA A CASO DALLA SCATOLA
+
+matite = [...scatolaMatite]
+
+const nuovaScatola = []
+
+let matita = Math.floor(Math.random(0)* matite.length) 
+console.log(matita)
 
 
-// Utilizziamo un ciclo per chiedere all’utente un numero tramite prompt.
-let numero
-
-// let numero = parseInt(prompt("scrivi un numero"));
-// console.log(numero, typeof(numero));//
-
-// Se il numero è dispari, lo salviamo in una lista.
-
-const numeriDispari = [];
-
-// const DISPARI = numero % 2 != 0
 
 
-// console.log(numero, DISPARI);
 
-//  if (numero == DISPARI){
-
-//     numeriDispari.push(numero);
-//  }
-
-// console.log(numeriDispari);
-
-// Continuiamo a chiedere un numero all’utente finchè non avremo ottenuto 10 numeri dispari.
-
-const LIMITE = 10
-
-while(numeriDispari.length < LIMITE){
-    console.log(numeriDispari)
-    let numero = parseInt(prompt("Aggiungi un numero dispari"))
-
-    let dispari = numero % 2
-    
-
-    if (dispari == true && !isNaN.numero  ){
-        console.log(numero)
-
-        numeriDispari.push(numero);
-    }
-}
-
-console.log("Ecco i numeri che hai inserito: ", ...numeriDispari)
+// LA TOLGO DALLA SCATOLA
+// LA METTO NELLA NUOVA SCATOLA NEL PRIMO POSTO LIBERO
