@@ -28,15 +28,34 @@ matite = [...scatolaMatite]
 
 const nuovaScatola = []
 
-let matita = Math.floor(Math.random(0)* matite.length) 
+
 
 
 // LA TOLGO DALLA SCATOLA
 
-while (matite.length > 0){
-    matite.pop(matita)
-    console.log(matita , matite)
-}
+
+ 
+
+    while( matite.length > 0 ){
+
+  
+
+        let pesca = Math.floor(Math.random(0) * matite.length)
+
+        console.log(pesca)
+        matite.pop(pesca)
+    
+
+        nuovaScatola.push(matite[pesca])
+
+    }
+
+
+    
+
+
+
+console.log(scatolaMatite , nuovaScatola)
 
 
 
