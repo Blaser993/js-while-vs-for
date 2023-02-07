@@ -29,11 +29,15 @@ matite = [...scatolaMatite]
 const nuovaScatola = []
 
 let matita = Math.floor(Math.random(0)* matite.length) 
-console.log(matita)
-
-
-
 
 
 // LA TOLGO DALLA SCATOLA
+
+while (matite.length > 0){
+    matite.pop(matita)
+    console.log(matita , matite)
+}
+
+
+
 // LA METTO NELLA NUOVA SCATOLA NEL PRIMO POSTO LIBERO
