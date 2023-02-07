@@ -47,4 +47,4 @@ while(numeriDispari.length < LIMITE){
     }
 }
 
-console.log(numeriDispari)
+console.log(...numeriDispari)
