@@ -47,4 +47,4 @@ while(numeriDispari.length < LIMITE){
     }
 }
 
-console.log(...numeriDispari)
+console.log("Ecco i numeri che hai inserito: ", ...numeriDispari)
