@@ -6,3 +6,11 @@ console.log("ciao")
 // Consigli:
 // dove conviene utilizzare il ciclo while e dove il ciclo for?
 // come faccio a capire se un numero è pari o dispari?
+
+// Utilizziamo un ciclo per chiedere all’utente un numero tramite prompt. 
+
+
+let numero = parseInt(prompt("scrivi un numero")) 
+console.log(numero, typeof(numero))
+
+// Se il numero è dispari, lo salviamo in una lista.
