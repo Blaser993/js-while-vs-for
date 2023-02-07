@@ -40,7 +40,7 @@ while(numeriDispari.length < LIMITE){
     let dispari = numero % 2
     
 
-    if (dispari = 1 && !isNaN.numero  ){
+    if (dispari == true && !isNaN.numero  ){
         console.log(numero)
 
         numeriDispari.push(numero);
